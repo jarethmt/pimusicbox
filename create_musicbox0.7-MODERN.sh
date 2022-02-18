@@ -116,7 +116,7 @@ curl https://bootstrap.pypa.io/get-pip.py | python3
 # upgrade the rest
 python3 -m pip install --upgrade setuptools
 # Attempted workarounds for SSL/TLS issues in old Python version.
-pip3.7 install --upgrade certifi urllib3[secure] requests[security] backports.ssl-match-hostname backports-abc
+#pip3.7 install --upgrade certifi urllib3[secure] requests[security] backports.ssl-match-hostname backports-abc
 # Upgrade some dependencies.
 pip3.7 install --upgrade gmusicapi pykka pylast pafy youtube-dl
 # The lastest versions that are still supported in Wheezy (Gstreamer 0.10).
@@ -131,8 +131,9 @@ pip3.7 install mopidy-youtube==2.0.2
 pip3.7 install mopidy-gmusic==2.0.0
 pip3.7 install mopidy-spotify-web==0.3.0
 pip3.7 install mopidy-spotify-tunigo==1.0.0
+pip3.7 install mopidy-spotify
 # Custom version with Web API OAuth fix backported from v3.1.0
-pip3.7 install --no-deps --upgrade https://github.com/pimusicbox/mopidy-spotify/zipball/backport-oauth
+#pip3.7 install --no-deps --upgrade https://github.com/pimusicbox/mopidy-spotify/zipball/backport-oauth
 pip3.7 install mopidy-tunein==0.4.1
 pip3.7 install mopidy-local-sqlite==1.0.0
 pip3.7 install mopidy-scrobbler==1.2.0
